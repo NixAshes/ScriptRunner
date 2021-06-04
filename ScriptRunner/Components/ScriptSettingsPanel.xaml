@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="ScriptRunner.Components.ScriptSettingsPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ScriptRunner.Components"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <DockPanel HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch">
+        
+        <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="Parameter Settings"
+                       FontSize="18"
+                       Margin="5 0 5 5"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Param 1 Label:"/>
+                <TextBox MinWidth="150" />
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel DockPanel.Dock="Bottom"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Stretch">
+            <Button Content="Save Defaults" />
+            <Button Content="Clear Params" />
+            <Button Content="Preview Command" />
+        </StackPanel>
+    </DockPanel>
+</UserControl>
